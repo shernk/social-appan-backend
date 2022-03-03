@@ -18,7 +18,7 @@ app.use((req, res, next) => {
 app.set("view engine", "ejs");
 
 // deploy
-app.use(express.static("public"));
+app.use(express.static("./public"));
 
 // firebase
 const firebaseConfig = require("./config");
